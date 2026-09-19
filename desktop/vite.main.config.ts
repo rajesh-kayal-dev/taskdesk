@@ -1,4 +1,17 @@
+import type { ConfigEnv } from 'vite';
 import { defineConfig } from 'vite';
 
-// https://vitejs.dev/config
-export default defineConfig({});
+export default defineConfig((env) => {
+  const forgeEnv = env as ConfigEnv<'build'>;
+  const { forgeConfigSelf } = forgeEnv;
+
+  return {
+    build: {
+      lib: {
+        entry: forgeConfigSelf.entry!,
+        fileName: () => '[name].js',
+        formats: ['es'],
+      },
+    },
+  };
+});

@@ -2,6 +2,7 @@
   "name": "desktop",
   "productName": "desktop",
   "version": "1.0.0",
+  "type": "module",
   "description": "My Electron application description",
   "main": ".vite/build/main.js",
   "private": true,
@@ -39,14 +40,14 @@
     "@types/react-dom": "^19.3.0",
     "@typescript-eslint/eslint-plugin": "^5.62.0",
     "@typescript-eslint/parser": "^5.62.0",
+    "@vitejs/plugin-react": "^4.3.4",
     "electron": "44.4.3",
     "eslint": "^8.57.1",
     "eslint-plugin-import": "^2.32.0",
-    "typescript": "~4.5.5",
+    "typescript": "~7.0.2",
     "vite": "^5.4.21"
   },
   "dependencies": {
-    "electron-squirrel-startup": "^1.0.1",
     "react": "^19.3.0",
     "react-dom": "^19.3.0"
   }
