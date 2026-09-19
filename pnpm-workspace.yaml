@@ -1,0 +1,6 @@
+packages:
+  - "desktop"
+  - "server"
+allowBuilds:
+  electron-winstaller: false
+  esbuild: false
